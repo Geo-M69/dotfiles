@@ -4,3 +4,7 @@ swaybg
 waybar
 wofi
 ghostty
+pipewire
+pipewire-pulse
+wireplumber
+ttf-font-awesome

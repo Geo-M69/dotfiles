@@ -13,8 +13,8 @@ Minimal Sway setup with Waybar and Wofi.
 
 ## Packages
 
-Core packages are listed in `dependencies_core.txt`.
-Optional packages are listed in `dependencies_extra.txt`.
+Core packages in `dependencies_core.txt` are required for the current default config to run as written (including Waybar audio + icon font support).
+Optional packages in `dependencies_extra.txt` are quality-of-life additions and integrations.
 
 ## OpenRC Audio Note
 

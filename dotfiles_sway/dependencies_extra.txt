@@ -14,12 +14,6 @@ foot
 xdg-desktop-portal-wlr
 xdg-user-dirs
 
-# audio stack
-pipewire
-pipewire-pulse
-wireplumber
-
 # fonts
 noto-fonts
-ttf-font-awesome
 otf-san-francisco
