@@ -12,7 +12,7 @@ window#waybar {
 }
 
 /* Keep containers flat and tight */
-#workspaces, #group-status, #mpris, #battery, #pulseaudio, #clock {
+#workspaces, #group-status, #pulseaudio, #clock {
   margin: 0;
   padding-top: 0;
   padding-bottom: 0;
@@ -60,7 +60,7 @@ window#waybar {
 }
 
 /* module spacing */
-#battery, #pulseaudio, #clock { 
+#pulseaudio, #clock { 
   padding: 0 4px; 
 }
 
@@ -71,14 +71,7 @@ window#waybar {
   color: #ffffff;
 }
 
-/* mpris flat */
-#mpris { 
-  font-size: 12px; 
-  padding: 0 8px; 
-  color: #cccccc;
-}
-
 /* spacing between modules */
-#custom-cpufreq, #cpu, #custom-power, #memory, #pulseaudio, #battery {
+#cpu, #memory, #pulseaudio {
   margin-right: 20px;
 }

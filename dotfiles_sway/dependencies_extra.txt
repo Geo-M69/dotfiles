@@ -1,14 +1,23 @@
+# optional utilities
 grim
 slurp
 wl-clipboard
+
+# optional desktop helpers
 mako
 polkit-gnome
 brightnessctl
 playerctl
+
+# xdg integration
 xdg-desktop-portal-wlr
 xdg-user-dirs
+
+# audio stack
 pipewire
 pipewire-pulse
 wireplumber
+
+# fonts
 noto-fonts
 ttf-font-awesome

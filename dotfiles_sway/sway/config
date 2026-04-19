@@ -30,10 +30,12 @@ client.focused_inactive #444444 #444444 #cccccc #444444 #444444
 client.urgent           #ffffff #000000 #ffffff #000000 #000000
 
 # wallpaper
-exec_always swaybg -i /home/geo/Pictures/Wallpapers/wallhaven-rqqy5m_1280x800_1.png -m fill
+exec_always sh -c 'wall="$HOME/Pictures/Wallpapers/wallhaven-rqqy5m_1280x800_1.png"; if [ -f "$wall" ]; then swaybg -i "$wall" -m fill; else swaybg -c 111111; fi'
 
 # start waybar
 exec_always pkill waybar; waybar
-exec_always pkill pipewire; pipewire
-exec_always pkill wireplumber; wireplumber
-exec_always pkill pipewire-pulse; pipewire-pulse
+
+# start audio stack once per sway session (avoid reload audio glitches)
+exec pipewire
+exec wireplumber
+exec pipewire-pulse
