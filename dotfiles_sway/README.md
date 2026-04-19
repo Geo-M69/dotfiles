@@ -1,6 +1,6 @@
 # dotfiles_sway
 
-Minimal Sway setup translated from Hyprland, with Waybar and Wofi.
+Minimal Sway setup with Waybar and Wofi.
 
 ## Layout
 
@@ -15,13 +15,6 @@ Minimal Sway setup translated from Hyprland, with Waybar and Wofi.
 
 Core packages are listed in `dependencies_core.txt`.
 Optional packages are listed in `dependencies_extra.txt`.
-
-Install example (Artix/Arch):
-
-```bash
-sed '/^\s*#/d;/^\s*$/d' dependencies_core.txt | xargs sudo pacman -S --needed
-sed '/^\s*#/d;/^\s*$/d' dependencies_extra.txt | xargs sudo pacman -S --needed
-```
 
 ## OpenRC Audio Note
 

@@ -30,7 +30,7 @@ client.focused_inactive #444444 #444444 #cccccc #444444 #444444
 client.urgent           #ffffff #000000 #ffffff #000000 #000000
 
 # wallpaper
-exec_always sh -c 'wall="$HOME/Pictures/Wallpapers/wallhaven-rqqy5m_1280x800_1.png"; if [ -f "$wall" ]; then swaybg -i "$wall" -m fill; else swaybg -c 111111; fi'
+exec_always sh -c 'pkill -x swaybg || true; wall="$HOME/Pictures/Wallpapers/wallhaven-rqqy5m_1280x800_1.png"; if [ -f "$wall" ]; then swaybg -i "$wall" -m fill; else swaybg -c 111111; fi'
 
 # start waybar
 exec_always pkill waybar; waybar

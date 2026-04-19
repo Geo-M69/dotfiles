@@ -4,5 +4,3 @@ swaybg
 waybar
 wofi
 ghostty
-# optional fallback terminal (main terminal is ghostty)
-foot

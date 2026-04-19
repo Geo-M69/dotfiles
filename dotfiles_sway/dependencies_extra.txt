@@ -8,6 +8,7 @@ mako
 polkit-gnome
 brightnessctl
 playerctl
+foot
 
 # xdg integration
 xdg-desktop-portal-wlr
@@ -21,3 +22,4 @@ wireplumber
 # fonts
 noto-fonts
 ttf-font-awesome
+otf-san-francisco
