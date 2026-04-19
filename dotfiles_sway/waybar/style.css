@@ -50,10 +50,13 @@ window#waybar {
 }
 
 /* right group – flat */
-#group-status { 
-  background: transparent; 
-  color: #e6e6e6; 
-  padding: 0 6px; 
+#group-status {
+  background: transparent;
+}
+
+#cpu, #memory, #pulseaudio, #clock {
+  padding: 0 6px;
+  margin: 0;
 }
 
 /* module spacing */

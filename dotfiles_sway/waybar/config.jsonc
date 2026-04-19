@@ -1,43 +1,37 @@
 {
   "layer": "top",
   "position": "top",
-  "height": 26,
-  "exclusive": true,
+  "height": 24,
+  "spacing": 6,
 
-  "modules-left": ["sway/workspaces"],
-  "modules-center": [],
+  "modules-left": [
+    "sway/workspaces"
+  ],
 
-  "modules-right": ["group/status"],
+  "modules-right": [
+    "group/status"
+  ],
 
   "group/status": {
     "orientation": "horizontal",
-    "modules": ["cpu", "memory", "pulseaudio", "clock"]
-  },
-
-  "sway/workspaces": {
-    "disable-scroll": false,
-    "all-outputs": false,
-    "format": "{name}",
-    "on-click": "activate",
-    "on-scroll-up": "swaymsg workspace prev",
-    "on-scroll-down": "swaymsg workspace next"
+    "modules": [
+      "cpu",
+      "memory",
+      "pulseaudio",
+      "clock"
+    ]
   },
 
   "cpu": {
     "interval": 2,
-    "tooltip": false,
-    "format": "  {usage}%"
+    "format": " {usage}%",
+    "tooltip": false
   },
 
   "memory": {
     "interval": 5,
-    "tooltip": false,
-    "format": "  {percentage}%",
-    "format-alt": "  {used:0.1f}/{total:0.1f} GiB",
-    "states": {
-      "warning": 70,
-      "critical": 90
-    }
+    "format": " {percentage}%",
+    "tooltip": false
   },
 
   "pulseaudio": {
@@ -53,6 +47,6 @@
 
   "clock": {
     "tooltip": false,
-    "format": "{:%a %e, %H:%M}"
+    "format": "{:%H:%M}"
   }
 }
