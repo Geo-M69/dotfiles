@@ -1,0 +1,39 @@
+set $mod Mod4
+
+# terminal + launcher
+bindsym $mod+Return exec ghostty
+bindsym $mod+d exec wofi --show drun
+
+# kill window
+bindsym $mod+q kill
+
+# movement
+bindsym $mod+h focus left
+bindsym $mod+j focus down
+bindsym $mod+k focus up
+bindsym $mod+l focus right
+
+# workspaces
+bindsym $mod+1 workspace 1
+bindsym $mod+2 workspace 2
+bindsym $mod+3 workspace 3
+
+# basic look
+gaps inner 5
+gaps outer 0
+default_border pixel 2
+
+# Monochrome border theme
+client.focused   #b3b3b3 #b3b3b3 #000000 #b3b3b3 #b3b3b3
+client.unfocused #2a2a2a #2a2a2a #777777 #2a2a2a #2a2a2a
+client.focused_inactive #444444 #444444 #cccccc #444444 #444444
+client.urgent           #ffffff #000000 #ffffff #000000 #000000
+
+# wallpaper
+exec_always swaybg -i /home/geo/Pictures/Wallpapers/wallhaven-rqqy5m_1280x800_1.png -m fill
+
+# start waybar
+exec_always pkill waybar; waybar
+exec_always pkill pipewire; pipewire
+exec_always pkill wireplumber; wireplumber
+exec_always pkill pipewire-pulse; pipewire-pulse

@@ -1,0 +1,48 @@
+# window-decoration = client
+window-decoration = false
+window-padding-x = 16
+window-padding-y = 16
+background-opacity = 0.92
+# slightly less transparent for a darker look
+
+gtk-single-instance = true
+quit-after-last-window-closed = false
+# initial-window = false
+
+# font-family = JetBrainsMono Nerd Font Mono
+font-family = Monaco
+font-size = 11
+
+# Dark foreground/background
+foreground = #E0E0E0 
+# light gray text
+background = #080808 
+# very dark gray window background
+
+# Dark palette – keep two‑tone contrast for UI elements
+palette = 0=#1E1E1E   
+# default background
+palette = 1=#2D2D2D   
+# slightly lighter for UI panels
+palette = 2=#3C3C3C   
+# hovered items
+palette = 3=#4B4B4B   
+# selected items
+palette = 4=#5A5A5A   
+# accent / borders
+palette = 5=#6A6A6A   
+# secondary accent
+palette = 6=#7A7A7A   
+# muted text
+palette = 7=#A0A0A0   
+# brighter text / highlights
+palette = 8=#8B8B8B   
+# alternate panel
+palette = 9=#9C9C9C
+palette = 10=#ADADAD
+palette = 11=#BEBEBE
+palette = 12=#CFCFCF
+palette = 13=#DFDFDF
+palette = 14=#EFEFEF
+palette = 15=#FFFFFF
+# pure white for critical alerts

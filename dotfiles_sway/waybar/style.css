@@ -1,0 +1,81 @@
+* {
+  font-family: "SF Pro Text", "SF Pro Display", "Font Awesome 6 Free Solid", "Font Awesome 6 Free";
+  font-size: 13px;
+  font-weight: 400;
+  color: #e6e6e6;              /* light text */
+  background: transparent;
+  min-height: 0;
+}
+
+window#waybar { 
+  background: transparent;   /* subtle dark bar */
+}
+
+/* Keep containers flat and tight */
+#workspaces, #group-status, #mpris, #battery, #pulseaudio, #clock {
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+/* workspace strip */
+#workspaces {
+  padding: 0 4px;
+}
+
+/* workspace buttons */
+#workspaces button {
+  font-size: 12px;
+  color: #aaaaaa;              /* dim inactive */
+  background: transparent;
+  border: none;
+  padding: 0 6px;
+  margin: 0 6px 0 0;
+  border-radius: 0;
+  box-shadow: none;
+  min-height: 0;
+}
+
+/* hover (optional but nice in dark themes) */
+#workspaces button:hover {
+  color: #ffffff;
+}
+
+/* active workspace: underline only */
+#workspaces button.active {
+  background: transparent;
+  color: #ffffff;              /* bright active */
+  border-bottom: 2px solid #ffffff;
+  padding-bottom: 0;
+}
+
+/* right group – flat */
+#group-status { 
+  background: transparent; 
+  color: #e6e6e6; 
+  padding: 0 6px; 
+}
+
+/* module spacing */
+#battery, #pulseaudio, #clock { 
+  padding: 0 4px; 
+}
+
+/* clock a touch heavier */
+#clock { 
+  font-weight: 500; 
+  font-size: 13px; 
+  color: #ffffff;
+}
+
+/* mpris flat */
+#mpris { 
+  font-size: 12px; 
+  padding: 0 8px; 
+  color: #cccccc;
+}
+
+/* spacing between modules */
+#custom-cpufreq, #cpu, #custom-power, #memory, #pulseaudio, #battery {
+  margin-right: 20px;
+}

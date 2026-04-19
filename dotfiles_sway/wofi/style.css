@@ -1,0 +1,59 @@
+* {
+    font-family: "Monaco", "SF Pro Display", "Inter", sans-serif;
+    font-size: 14px;
+    color: #e0e0e0;               /* Light gray foreground */
+}
+
+/* Main window background */
+window {
+    background-color: rgba(30, 30, 30, 0.92);   /* Dark, slightly transparent */
+    border-radius: 12px;
+    padding: 16px;
+    border: 1px solid rgba(80, 80, 80, 0.45);   /* Subtle dark border */
+}
+
+/* Search input field */
+#input {
+    margin: 8px;
+    padding: 6px 10px;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #e0e0e0;
+    background-color: rgba(45, 45, 45, 0.85);
+    border: 1px solid rgba(80, 80, 80, 0.45);
+    box-shadow: none;
+    outline: none;
+    caret-color: #ffffff;
+}
+
+/* Remove blue GTK focus glow */
+#input:focus {
+    border: 1px solid rgba(120, 120, 120, 0.65);
+    background-color: rgba(55, 55, 55, 0.90);
+    box-shadow: none;
+    outline: none;
+}
+
+/* Each entry row */
+#entry {
+    padding: 6px 10px;
+    border-radius: 6px;
+    background-color: transparent;
+    color: #e0e0e0;
+}
+
+/* Selected entry */
+#entry:selected {
+    background-color: rgba(80, 80, 80, 0.55);   /* Darker highlight */
+    color: #ffffff;
+}
+
+/* Hide sub‑action arrows */
+#entry image:first-child {
+    opacity: 0;
+    min-width: 0;
+    min-height: 0;
+    margin: 0;
+    padding: 0;
+}
+
