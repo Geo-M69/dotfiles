@@ -1,0 +1,14 @@
+grim
+slurp
+wl-clipboard
+mako
+polkit-gnome
+brightnessctl
+playerctl
+xdg-desktop-portal-wlr
+xdg-user-dirs
+pipewire
+pipewire-pulse
+wireplumber
+noto-fonts
+ttf-font-awesome
