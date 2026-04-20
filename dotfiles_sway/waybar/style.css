@@ -1,6 +1,6 @@
 * {
   font-family: "SF Pro Text", "SF Pro Display", "Font Awesome 6 Free Solid", "Font Awesome 6 Free";
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 400;
   color: #e6e6e6;              /* light text */
   background: transparent;
@@ -57,6 +57,8 @@ window#waybar {
 #cpu, #memory, #pulseaudio, #clock {
   padding: 0 6px;
   margin: 0;
+  padding-top: 2px;
+  padding-bottom: 2px;
 }
 
 /* module spacing */
@@ -66,8 +68,7 @@ window#waybar {
 
 /* clock a touch heavier */
 #clock { 
-  font-weight: 500; 
-  font-size: 13px; 
+  font-weight: 500;  
   color: #ffffff;
 }
 
